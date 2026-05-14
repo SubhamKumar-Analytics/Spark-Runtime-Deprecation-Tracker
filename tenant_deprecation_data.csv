@@ -1,0 +1,31 @@
+TenantID,TenantName,Region,RuntimeVersion,DeprecationStatus,AcknowledgementStatus,MigrationStatus,DaysToDisablement,LastContactDate,AssignedCSM,EscalationTier
+T001,Meridian Analytics,India,Spark 2.4,Deprecated,Acknowledged,In Progress,17,2025-04-28,Priya Sharma,Tier 2
+T002,Bluewave logistics,US East,Spark 2.4,Deprecated,Not Acknowledged,Not Started,18,2025-04-15,James Colton,Tier 3
+T003,NovaTech Solutions,UK,Spark 3.1,Deprecated,Acknowledged,Completed,0,2025-04-30,Sarah Mitchell,Tier 1
+T004,Greenfield Retail,Germany,Spark 2.4,Deprecated,Acknowledged,Not Started,21,2025-04-22,Hans Weber,Tier 2
+T005,Apex Financial,APAC,Spark 3.1,Deprecated,Not Acknowledged,Not Started,0,2025-04-10,Wei Liang,Tier 3
+T006,Crestline Manufacturing,India,Spark 3.3,Active,Not Applicable,Not Applicable,94,2025-05-01,Priya Sharma,Tier 1
+T007,Dawnlight media,US West,Spark 2.4,Deprecated,Acknowledged,In Progress,18,,Rachel Adams,Tier 2
+T008,Ironclad Pharma,Australia,Spark 3.1,Deprecated,Acknowledged,Completed,0,2025-05-02,Tom Hughes,Tier 1
+T009,Stellar Dynamics,Canada,Spark 2.4,Deprecated,Not Acknowledged,Not Started,18,2025-04-12,Laura Bennett,Tier 3
+T010,Oceanic Data,Japan,Spark 3.3,Active,Not Applicable,Not Applicable,90,2025-05-01,Kenji Tanaka,Tier 1
+T011,Pinnacle Consulting,India,Spark 3.1,Deprecated,Acknowledged,In Progress,0,2025-04-29,Priya Sharma,Tier 2
+T012,Redstone energy,US East,Spark 2.4,Deprecated,Not Acknowledged,Not Started,18,2025-04-08,James Colton,Tier 3
+T013,Brightpath Education,UK,Spark 3.3,Active,Not Applicable,Not Applicable,90,2025-04-30,Sarah Mitchell,Tier 1
+T014,Falcon Aerospace,UAE,Spark 2.4,Deprecated,Acknowledged,Completed,18,2025-05-01,Omar Khalid,Tier 1
+T015,Harvest Agritech,India,Spark 3.1,Deprecated,Not Acknowledged,Not Started,0,2025-04-11,Priya Sharma,Tier 3
+T016,Cobalt Systems,Germany,Spark 2.4,Deprecated,Acknowledged,Blocked,21,2025-04-25,Hans Weber,Tier 2
+T017,Summit Retail Group,US West,Spark 3.1,Deprecated,Acknowledged,Completed,0,2025-04-28,Rachel Adams,Tier 1
+T018,Vantage Telecom,APAC,Spark 2.4,Deprecated,Not Acknowledged,Not Started,18,2025-04-09,Wei Liang,Tier 3
+T019,Nexus Healthcare,Canada,Spark 3.3,Active,Not Applicable,Not Applicable,90,,Laura Bennett,Tier 1
+T020,Aurora Fintech,Australia,Spark 2.4,Deprecated,Acknowledged,In Progress,18,2025-04-26,Tom Hughes,Tier 2
+T021,ironbridge logistics,India,Spark 2.4,Deprecated,Not Acknowledged,Not Started,18,2025-04-07,Priya Sharma,Tier 3
+T022,Cloudmine Analytics,US East,Spark 3.1,Deprecated,Acknowledged,Completed,0,2025-04-30,James Colton,Tier 1
+T023,Stormfront Media,UK,Spark 2.4,Deprecated,Acknowledged,In Progress,18,2025-04-24,Sarah Mitchell,Tier 2
+T024,Delta Precision,Japan,Spark 3.3,Active,Not Applicable,Not Applicable,90,2025-05-01,Kenji Tanaka,Tier 1
+T025,Vertex Manufacturing,UAE,Spark 2.4,Deprecated,Not Acknowledged,Not Started,18,2025-04-06,Omar Khalid,Tier 3
+T026,Brightline Consulting,India,Spark 3.1,Deprecated,Acknowledged,In Progress,0,2025-04-29,Priya Sharma,Tier 2
+T027,Coastline Retail,US West,Spark 2.4,Deprecated,Acknowledged,Completed,18,2025-05-01,Rachel Adams,Tier 1
+T028,Luminary Data,Germany,Spark 3.1,Deprecated,Not Acknowledged,Not Started,0,2025-04-13,Hans Weber,Tier 3
+T029,Riverbend Energy,Canada,Spark 2.4,Deprecated,Acknowledged,In Progress,14,2025-04-23,Laura Bennett,Tier 2
+T030,Skyline Pharma,APAC,Spark 3.3,Active,Not Applicable,Not Applicable,90,2025-05-01,Wei Liang,Tier 1
