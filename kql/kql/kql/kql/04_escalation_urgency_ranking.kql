@@ -1,0 +1,15 @@
+// ranks tenants by urgency - who do we contact first?
+// urgency score 1 = most critical (past deadline, no acknowledgement)
+// note: blocked tenants are included here since they still need attention
+
+tenant_deprecation_data
+| where DeprecationStatus == "Deprecated"
+    and MigrationStatus != "Completed"
+| extend UrgencyScore = case(
+    DaysToDisablement == 0 and AcknowledgementStatus == "Not Acknowledged", 1,
+    DaysToDisablement == 0 and AcknowledgementStatus == "Acknowledged", 2,
+    DaysToDisablement <= 18 and AcknowledgementStatus == "Not Acknowledged", 3,
+    DaysToDisablement <= 18 and AcknowledgementStatus == "Acknowledged", 4,
+    5)
+| project TenantID, TenantName, Region, RuntimeVersion, AcknowledgementStatus, DaysToDisablement, EscalationTier, UrgencyScore
+| order by UrgencyScore asc, DaysToDisablement asc
