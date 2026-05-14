@@ -1,0 +1,13 @@
+// summary of where things stand per runtime version
+// added migration rate % to make it easier to report in weekly standup
+
+tenant_deprecation_data
+| where DeprecationStatus == "Deprecated"
+| summarize
+    TotalTenants = count(),
+    Completed = countif(MigrationStatus == "Completed"),
+    InProgress = countif(MigrationStatus == "In Progress"),
+    NotStarted = countif(MigrationStatus == "Not Started")
+    by RuntimeVersion
+| extend MigrationRate = round(todouble(Completed) / todouble(TotalTenants) * 100, 1)
+| order by RuntimeVersion asc
