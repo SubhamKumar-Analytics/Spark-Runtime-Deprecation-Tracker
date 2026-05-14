@@ -1,0 +1,7 @@
+// show all tenants on deprecated runtimes, sorted by how close they are to disablement
+// using this as the starting list for outreach
+
+tenant_deprecation_data
+| where DeprecationStatus == "Deprecated"
+| project TenantID, TenantName, Region, RuntimeVersion, AcknowledgementStatus, MigrationStatus, DaysToDisablement
+| order by DaysToDisablement asc
