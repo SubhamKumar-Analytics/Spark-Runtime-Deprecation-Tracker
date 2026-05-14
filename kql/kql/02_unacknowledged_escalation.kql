@@ -1,0 +1,8 @@
+// tenants who haven't acknowledged yet - these are the ones we need to chase first
+// sorted by days remaining and last contact so we know who to call today
+
+tenant_deprecation_data
+| where DeprecationStatus == "Deprecated"
+    and AcknowledgementStatus == "Not Acknowledged"
+| project TenantID, TenantName, Region, RuntimeVersion, MigrationStatus, DaysToDisablement, LastContactDate, EscalationTier
+| order by DaysToDisablement asc, LastContactDate asc
